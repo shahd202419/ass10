@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <h1 class="text-center m-5 ">Bookmarker
+                <div class="full"></div>
+            </h1>
+        </div>
+        <div class=" border-dark dotted">
+            <h2 class="h3 py-3">
+                <i class="fa-solid fa-bookmark "></i> 
+                Bookmark your favorite sites 
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="py-3">
+                <label for="name" class="p-1 fw-bold"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                <input type="text" id="name" class="form-control mb-3" placeholder="Bookmark Name">
+                <label for="url" class="p-1 fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+                <input type="text" id="url"  class="form-control mb-3" placeholder="Website URL">
+                <div class=" text-center"> <button class="btn btn-danger px-5" onclick="getValues()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <table class=" table m-4 text-center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="x">
+
+            </tbody>
+        </table>
+
+    
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

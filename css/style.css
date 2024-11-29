@@ -1,0 +1,47 @@
+body {
+    background-color: #F7ECDE;
+    min-height: 100vh;
+}
+::selection {
+    background-color: #FEC260;;
+}
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    position: relative;
+    width: fit-content;
+}
+h1 .full {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color:#FEC260;
+    z-index: -1;
+    transition: all 1s;
+    height: 25px;
+    bottom: 10px;
+}
+h1:hover .full {
+height: 40px;
+}
+.dotted {
+ 
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+}
+.dotted h2{
+    /* background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+     */
+     color: #3ca55c;
+    background-clip: text;
+    /* color: transparent; */
+    text-align:center;
+}
+input:focus {
+    box-shadow: 0 0 0 0.25rem #fec26055 !important;
+    border-color: #d99c39 !important;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
